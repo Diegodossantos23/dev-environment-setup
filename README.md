@@ -25,12 +25,6 @@ git clone https://github.com/Diegodossantos23/dev-environment-setup.git
 ```bash 
 git@github.com:Diegodossantos23/dev-environment-setup.git
 ```
-
-#### GitHub CLI
-```bash
-gh repo clone Diegodossantos23/dev-environment-setup
-```
-
 ### Making the Script Executable
 
 After cloning the repository, navigate to the directory where the repository was cloned. Then, execute the following command to make the installation script executable:
