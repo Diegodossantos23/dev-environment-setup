@@ -74,24 +74,6 @@ else
     echo "Apache2 is already installed."
 fi
 
-echo "Installing PHP 7.1 and its extensions..."
-if ! dpkg -l | grep -q "php7.1"; then
-    sudo apt-get install -y python-software-properties
-    sudo add-apt-repository -y ppa:ondrej/php
-    sudo apt-get update
-    sudo apt-get install -y php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt \
-        php7.1-curl php-dev php-pear \
-        openssl php7.1-bcmath php7.1-json php7.1-tokenizer php7.1-zip \
-        php7.1-fpm php7.1-opcache \
-        php7.1-gd \
-        libapache2-mod-php7.1 php7.1-soap \
-        php-php-gettext \
-        php7.1-pgsql
-    sudo systemctl restart apache2
-else
-    echo "PHP 7.1 is already installed."
-fi
-
 echo "Installing PostgreSQL..."
 if ! dpkg -l | grep -q "postgresql"; then
     sudo apt-get install -y postgresql
