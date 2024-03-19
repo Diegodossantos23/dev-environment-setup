@@ -20,6 +20,8 @@ To clone the repository to your system, open a terminal and navigate to the dire
 git clone <URL_OF_YOUR_REPOSITORY>
 
 
+```
+
 ### Making the Script Executable
 
 After cloning the repository, navigate to the directory where the repository was cloned. Then, execute the following command to make the installation script executable:
