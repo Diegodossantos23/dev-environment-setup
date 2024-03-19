@@ -16,17 +16,17 @@ This script automates the installation of essential web development tools on Lin
 
 To clone the repository to your system, open a terminal and navigate to the directory where you want to clone the repository. Then, execute the following command:
 
-## HTTPS
+#### HTTPS
 ```bash
 git clone https://github.com/Diegodossantos23/dev-environment-setup.git
 ```
 
-## SSH
+#### SSH
 ```bash 
 git@github.com:Diegodossantos23/dev-environment-setup.git
 ```
 
-## GitHub CLI
+#### GitHub CLI
 ```bash
 gh repo clone Diegodossantos23/dev-environment-setup
 ```
