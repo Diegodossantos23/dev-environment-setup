@@ -1,36 +1,36 @@
 #!/bin/bash
 
-echo "Updating package list and installing essential tools..."
-sudo apt-get update
-sudo apt-get install -y curl wget htop
+# Function to display progress messages
+print_status() {
+    echo "==> $1"
+}
 
-echo "Installing Google Chrome..."
+print_status "Updating package list..."
+sudo apt update -y
+
+print_status "Installing Google Chrome..."
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ./google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt install -f -y
 rm google-chrome-stable_current_amd64.deb
 
-echo "Installing Visual Studio Code..."
+print_status "Installing Visual Studio Code..."
 sudo snap install --classic code
 
-echo "Installing Node.js and npm..."
+print_status "Installing Node.js and npm..."
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs npm
+sudo apt install -y nodejs npm
 
-echo "Installing Git..."
-sudo apt-get install -y git
+print_status "Installing Git..."
+sudo apt install -y git
 
-echo "Installing Postman..."
+print_status "Installing Postman..."
 sudo snap install postman
 
-echo "Installing Docker..."
+print_status "Installing Docker..."
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
-sudo apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
@@ -38,7 +38,7 @@ echo \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
-echo "Installing Docker Compose..."
+print_status "Installing Docker Compose..."
 sudo apt-get install -y docker-compose
 
-echo "Installation completed."
+print_status "Installation completed."
