@@ -21,10 +21,6 @@ To clone the repository to your system, open a terminal and navigate to the dire
 git clone https://github.com/Diegodossantos23/dev-environment-setup.git
 ```
 
-#### SSH
-```bash 
-git@github.com:Diegodossantos23/dev-environment-setup.git
-```
 ### Making the Script Executable
 
 After cloning the repository, navigate to the directory where the repository was cloned. Then, execute the following command to make the installation script executable:
@@ -37,7 +33,3 @@ To run the installation script, execute the following command:
 ```bash
 ./install_web_dev_tools.sh
 ```
-
-### License
-This project is licensed under the MIT License.
-Make sure to replace `<URL_DO_YOUR_REPOSITORIO>` with the actual URL of your GitHub repository. These instructions provide clear guidance on how to make the script executable and how to run it.
