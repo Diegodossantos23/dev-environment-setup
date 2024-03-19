@@ -21,6 +21,11 @@ To clone the repository to your system, open a terminal and navigate to the dire
 git clone https://github.com/Diegodossantos23/dev-environment-setup.git
 ```
 
+### Change to directory
+```bash
+cd dev-environment-setup
+```
+
 ### Making the Script Executable
 
 After cloning the repository, navigate to the directory where the repository was cloned. Then, execute the following command to make the installation script executable:
