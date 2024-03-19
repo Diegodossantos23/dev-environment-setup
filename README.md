@@ -27,7 +27,7 @@ After cloning the repository, navigate to the directory where the repository was
 chmod +x install_web_dev_tools.sh
 ```
 
-### running the Script
+### Running the Script
 To run the installation script, execute the following command:
 ```bash
 ./install_web_dev_tools.sh
