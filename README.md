@@ -22,6 +22,9 @@ git clone https://github.com/Diegodossantos23/dev-environment-setup.git
 ```
 
 ### Change to directory
+
+After you have cloned the repository, navigate to the directory
+
 ```bash
 cd dev-environment-setup
 ```
