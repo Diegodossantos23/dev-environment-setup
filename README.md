@@ -18,18 +18,20 @@ To clone the repository to your system, open a terminal and navigate to the dire
 
 ```bash
 git clone <URL_OF_YOUR_REPOSITORY>
-
-
 ```
 
 ### Making the Script Executable
 
 After cloning the repository, navigate to the directory where the repository was cloned. Then, execute the following command to make the installation script executable:
+```bash
 chmod +x install_web_dev_tools.sh
+```
 
 ### running the Script
 To run the installation script, execute the following command:
+```bash
 ./install_web_dev_tools.sh
+```
 
 ### License
 This project is licensed under the MIT License.
