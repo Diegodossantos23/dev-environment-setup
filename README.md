@@ -9,6 +9,8 @@ This script automates the installation of essential web development tools on Lin
 - Postman
 - Docker
 - Docker Compose
+- Apache
+- PostgreSQL
 
 ## Usage
 
